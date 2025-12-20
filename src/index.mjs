@@ -47,7 +47,7 @@ app.get('/api/users', (req, res) => {
     if(filter && value){
         return res.send(users.filter(((user)=>user[filter].toLowerCase().includes(value.toLowerCase()))))
     }
-    res.send({msg: 'User Not Found'})
+    res.send(users)
 })
 
 //products
@@ -88,6 +88,17 @@ app.get('/api/products/:id', (req, res) => {
         return res.send(product)
     }
     return res.status(404).send({ msg: "User Not Found" })
+})
+
+//covert data to json formal
+app.use(express.json())
+
+// Insert new user using POST
+app.post('/api/users', (req, res)=>{
+    const {body} = req
+    const newUser = {id: users[users.length-1].id+1, ...body}
+    users.push(newUser)
+    res.status(201).send(newUser)
 })
 
 app.listen(PORT, () => {
