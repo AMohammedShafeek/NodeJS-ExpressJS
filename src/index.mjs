@@ -118,6 +118,39 @@ app.put('/api/users/:id', (req, res)=>{
     return res.status(200).send({msg: "User Upated"})
 })
 
+//Update User using PATCH Request
+app.patch('/api/users/:id', (req, res)=>{
+    const id = parseInt(req.params.id)
+    if (isNaN(id)) {
+        return res.status(400).send({ msg: "Bad Request. Invalid ID" })
+    }
+    const userIndex = users.findIndex((user) =>
+        (user.id === id)
+    )
+    if (userIndex === -1) {
+        return res.status(404).send({ msg: "User Not Found" })
+    }
+    const {body} = req
+    users[userIndex] = {...users[userIndex], ...body}
+    return res.status(200).send({msg: "User Upated"})
+})
+
+//Delete User using DELETE Request
+app.delete('/api/users/:id', (req, res)=>{
+    const id = parseInt(req.params.id)
+    if (isNaN(id)) {
+        return res.status(400).send({ msg: "Bad Request. Invalid ID" })
+    }
+    const userIndex = users.findIndex((user) =>
+        (user.id === id)
+    )
+    if (userIndex === -1) {
+        return res.status(404).send({ msg: "User Not Found" })
+    }
+    users.splice(userIndex, 1)
+    return res.status(200).send({msg: "User Deleted"})
+})
+
 app.listen(PORT, () => {
     console.log(`App is Running on PORT: ${PORT}`);
 })
