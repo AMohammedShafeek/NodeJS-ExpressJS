@@ -8,8 +8,8 @@ const router = Router()
 
 router.get('/api/users', (req, res) => {
 
-    console.log(req.cookies);
-    if (req.cookies.user && req.cookies.user === "admin") {
+    console.log(req.signedCookies);
+    if (req.signedCookies.user && req.signedCookies.user === "admin") {
         const { query: { filter, value } } = req
         if (filter && value) {
             return res.send(users.filter(((user) => user[filter].toLowerCase().includes(value.toLowerCase()))))
