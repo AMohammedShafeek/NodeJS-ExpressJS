@@ -1,0 +1,230 @@
+MERN STACK E-COMMERCE APPLICATION DOCUMENTATION
+================================================
+
+PROJECT NAME:
+Repiit - Full Stack MERN E-Commerce Platform
+
+--------------------------------------------------
+1. PROJECT OVERVIEW
+--------------------------------------------------
+
+Repiit is a full-stack e-commerce web application built using the MERN stack:
+MongoDB, Express.js, React.js, and Node.js.
+
+The system supports:
+- User Authentication
+- Role-Based Authorization
+- Product Management
+- Cart & Wishlist System
+- Order Management
+- Payment Integration
+- Image Upload (Cloudinary)
+- Admin Dashboard
+- JWT Based Security
+- RESTful API Architecture
+
+--------------------------------------------------
+2. TECH STACK
+--------------------------------------------------
+
+Frontend:
+- React.js
+- Redux Toolkit
+- Axios
+- React Router DOM
+- Tailwind CSS
+
+Backend:
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT
+- Bcrypt
+- Multer
+- Cloudinary
+
+Deployment:
+- Render (Backend)
+- Vercel (Frontend)
+- MongoDB Atlas (Database)
+
+--------------------------------------------------
+3. FOLDER STRUCTURE
+--------------------------------------------------
+
+Backend Structure:
+
+/backend
+    /controllers
+        userController.js
+        productController.js
+        orderController.js
+        cartController.js
+    /models
+        userModel.js
+        productModel.js
+        orderModel.js
+    /routes
+        userRoutes.js
+        productRoutes.js
+        orderRoutes.js
+    /middleware
+        authMiddleware.js
+        errorMiddleware.js
+    server.js
+    config.js
+
+Frontend Structure:
+
+/frontend
+    /src
+        /components
+        /pages
+        /redux
+        /services
+        App.js
+        main.jsx
+
+--------------------------------------------------
+4. USER MODEL SCHEMA
+--------------------------------------------------
+
+Fields:
+- name: String
+- email: String
+- password: String (hashed)
+- role: String (user/admin)
+- avatar: Object (public_id, url)
+- createdAt: Date
+
+--------------------------------------------------
+5. PRODUCT MODEL SCHEMA
+--------------------------------------------------
+
+Fields:
+- name: String
+- description: String
+- price: Number
+- category: String
+- stock: Number
+- ratings: Number
+- images: Array
+- reviews: Array
+- createdAt: Date
+
+--------------------------------------------------
+6. AUTHENTICATION FLOW
+--------------------------------------------------
+
+Step 1: User Registers
+Step 2: Password hashed using bcrypt
+Step 3: JWT token generated
+Step 4: Token stored in HTTP-only cookie
+Step 5: Middleware verifies token for protected routes
+
+--------------------------------------------------
+7. ROLE-BASED AUTHORIZATION
+--------------------------------------------------
+
+Roles:
+- User
+- Admin
+
+Admin Capabilities:
+- Add Product
+- Update Product
+- Delete Product
+- View All Users
+- Manage Orders
+
+Middleware:
+isAuthenticatedUser
+authorizeRoles("admin")
+
+--------------------------------------------------
+8. API ENDPOINTS
+--------------------------------------------------
+
+USER APIs:
+/api/v1/register
+/api/v1/login
+/api/v1/logout
+/api/v1/password/forgot
+/api/v1/password/reset/:token
+
+PRODUCT APIs:
+/api/v1/products
+/api/v1/product/:id
+/api/v1/admin/product/new
+/api/v1/admin/product/:id
+
+ORDER APIs:
+/api/v1/order/new
+/api/v1/orders/me
+/api/v1/admin/orders
+
+--------------------------------------------------
+9. SAMPLE LOG DATA
+--------------------------------------------------
+
+2026-02-22T10:00:00Z - Server started on PORT 5000
+2026-02-22T10:00:05Z - MongoDB Connected
+2026-02-22T10:01:12Z - User Registered: user1@example.com
+2026-02-22T10:02:45Z - Product Added: iPhone 15
+2026-02-22T10:03:17Z - Order Placed: ORDER12345
+2026-02-22T10:04:09Z - Payment Success
+2026-02-22T10:05:33Z - Image Uploaded to Cloudinary
+
+--------------------------------------------------
+10. SECURITY FEATURES
+--------------------------------------------------
+
+- JWT Authentication
+- Password Hashing (bcrypt)
+- HTTP-only cookies
+- CORS Protection
+- Express Error Handling
+- MongoDB Injection Prevention
+- Role-Based Middleware
+- Input Validation
+
+--------------------------------------------------
+11. SCALABILITY FEATURES
+--------------------------------------------------
+
+- Pagination
+- Filtering
+- Search by Keyword
+- Product Category Filter
+- Price Filter
+- Sorting
+- Optimized MongoDB Queries
+- Indexing
+
+--------------------------------------------------
+12. FUTURE IMPROVEMENTS
+--------------------------------------------------
+
+- AI-based Product Recommendation
+- Live Chat System
+- Real-time Notifications (Socket.io)
+- Payment Gateway Integration (Razorpay / Stripe)
+- Admin Analytics Dashboard
+- PWA Conversion
+- Mobile App Version (React Native)
+
+--------------------------------------------------
+13. PERFORMANCE OPTIMIZATION
+--------------------------------------------------
+
+- Lazy Loading
+- Code Splitting
+- Image Compression
+- API Caching
+- MongoDB Indexing
+- Debouncing Search Queries
+
+--------------------------------------------------
+END OF MERN PROJECT DOCUMENT
+--------------------------------------------------
