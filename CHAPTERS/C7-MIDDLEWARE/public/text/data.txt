@@ -1,0 +1,53 @@
+===============================
+USER DATA RECORD FILE
+===============================
+
+ID: 1001
+Name: Shafeek
+Email: shafeek@example.com
+Role: Admin
+Status: Active
+--------------------------------
+
+ID: 1002
+Name: Tariq
+Email: tariq@example.com
+Role: User
+Status: Active
+--------------------------------
+
+ID: 1003
+Name: Kishor
+Email: kishor@example.com
+Role: Moderator
+Status: Inactive
+--------------------------------
+
+ID: 1004
+Name: Siva
+Email: nirfan@example.com
+Role: User
+Status: Active
+--------------------------------
+
+ID: 1005
+Name: Guru
+Email: guru@example.com
+Role: User
+Status: Suspended
+--------------------------------
+
+SYSTEM LOG ENTRIES
+===============================
+
+2026-02-22 10:00:01 - Server Started
+2026-02-22 10:01:15 - User 1002 Logged In
+2026-02-22 10:02:30 - User 1003 Updated Profile
+2026-02-22 10:03:42 - Admin Added New Product
+2026-02-22 10:05:10 - Order #ORD12345 Created
+2026-02-22 10:07:55 - User 1005 Account Suspended
+2026-02-22 10:09:20 - Backup Completed Successfully
+
+===============================
+END OF FILE
+===============================

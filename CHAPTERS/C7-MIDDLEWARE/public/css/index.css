@@ -1,0 +1,114 @@
+/* =========================
+   Google Font Import
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* =========================
+   Global Reset
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   Body Styling
+========================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+
+    /* Center everything */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =========================
+   Header
+========================= */
+header {
+    width: 100%;
+    background-color: #1e90ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* =========================
+   Navigation
+========================= */
+nav {
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #1e90ff;
+}
+
+/* =========================
+   Main Content
+========================= */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    text-align: center; /* Center text */
+}
+
+/* =========================
+   Headings & Text
+========================= */
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   Button Styling
+========================= */
+button {
+    padding: 10px 25px;
+    background-color: #1e90ff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #187bcd;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}
