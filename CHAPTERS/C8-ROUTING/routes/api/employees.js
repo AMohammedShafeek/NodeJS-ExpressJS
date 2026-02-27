@@ -1,0 +1,42 @@
+const express = require('express')
+const router = express.Router()
+const path = require('path')
+
+const data = {}
+data.employees = require('../../data/employees.json')
+
+router.route('/')
+    .get((req, res) => {
+        res.json(data.employees)
+    })
+    .post((req, res) => {
+        res.json({
+            "name": req.body.name,
+            "email": req.body.email,
+            "phone": req.phone,
+            "department": req.dept,
+            "position": req.pos,
+            "salary": req.salery,
+            "joiningDate": req.date,
+            "status": req.status
+        })
+    })
+    .put((req, res) => {
+        res.json({
+            "name": req.body.name,
+            "email": req.body.email,
+            "phone": req.phone,
+            "department": req.dept,
+            "position": req.pos,
+            "salary": req.salery,
+            "joiningDate": req.date,
+            "status": req.status
+        })
+    })
+    .delete((req, res) => {
+        res.json({
+            'id': req.body.id
+        })
+    })
+
+module.exports = router

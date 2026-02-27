@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Arjun Kumar",
+    "email": "arjun.kumar@example.com",
+    "phone": "+91-9876543210",
+    "department": "Development",
+    "position": "Frontend Developer",
+    "salary": 45000,
+    "joiningDate": "2023-01-15",
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "name": "Priya Sharma",
+    "email": "priya.sharma@example.com",
+    "phone": "+91-9123456780",
+    "department": "Development",
+    "position": "Backend Developer",
+    "salary": 50000,
+    "joiningDate": "2022-11-20",
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "name": "Rahul Verma",
+    "email": "rahul.verma@example.com",
+    "phone": "+91-9988776655",
+    "department": "UI/UX",
+    "position": "UI Designer",
+    "salary": 40000,
+    "joiningDate": "2023-03-10",
+    "status": "Active"
+  },
+  {
+    "id": 4,
+    "name": "Sneha Iyer",
+    "email": "sneha.iyer@example.com",
+    "phone": "+91-9090909090",
+    "department": "Marketing",
+    "position": "Digital Marketer",
+    "salary": 38000,
+    "joiningDate": "2022-08-05",
+    "status": "Active"
+  },
+  {
+    "id": 5,
+    "name": "Vikram Singh",
+    "email": "vikram.singh@example.com",
+    "phone": "+91-9345678901",
+    "department": "Sales",
+    "position": "Sales Executive",
+    "salary": 35000,
+    "joiningDate": "2021-12-18",
+    "status": "Active"
+  },
+  {
+    "id": 6,
+    "name": "Aisha Khan",
+    "email": "aisha.khan@example.com",
+    "phone": "+91-9765432109",
+    "department": "HR",
+    "position": "HR Manager",
+    "salary": 52000,
+    "joiningDate": "2020-07-25",
+    "status": "Active"
+  },
+  {
+    "id": 7,
+    "name": "Karthik Raj",
+    "email": "karthik.raj@example.com",
+    "phone": "+91-9654321876",
+    "department": "Development",
+    "position": "Full Stack Developer",
+    "salary": 55000,
+    "joiningDate": "2023-06-01",
+    "status": "Active"
+  },
+  {
+    "id": 8,
+    "name": "Meera Nair",
+    "email": "meera.nair@example.com",
+    "phone": "+91-9876501234",
+    "department": "Finance",
+    "position": "Accountant",
+    "salary": 42000,
+    "joiningDate": "2021-09-14",
+    "status": "Active"
+  },
+  {
+    "id": 9,
+    "name": "Imran Ali",
+    "email": "imran.ali@example.com",
+    "phone": "+91-9789012345",
+    "department": "Support",
+    "position": "Customer Support Executive",
+    "salary": 30000,
+    "joiningDate": "2022-04-30",
+    "status": "Active"
+  },
+  {
+    "id": 10,
+    "name": "Divya Reddy",
+    "email": "divya.reddy@example.com",
+    "phone": "+91-9012345678",
+    "department": "Operations",
+    "position": "Operations Manager",
+    "salary": 60000,
+    "joiningDate": "2019-10-12",
+    "status": "Active"
+  }
+]
